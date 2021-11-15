@@ -1,0 +1,16 @@
+body{
+    background-color: cornflowerblue;
+}
+h1{
+
+    font-weight: 100;
+}
+td,marquee{
+    font-family: cursive;
+}
+th{
+    font-family: cursive;
+    font-size: small;
+    font-weight: bold;
+}
+
