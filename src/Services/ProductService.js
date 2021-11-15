@@ -3,23 +3,23 @@ class ProductService
 {
     orderproduct(product)
     {
-        return axios.post("http://localhost:2021/flipkart_curd/savepro",product)
+        return axios.post("https://flipkart-app-beckend.herokuapp.com/savepro",product)
     }
     displayproduct()
     {
-        return axios.get("http://localhost:2021/flipkart_curd/fetchpro")
+        return axios.get("https://flipkart-app-beckend.herokuapp.com/fetchpro")
     }
     deleteproduct(id)
     {
-        return axios.delete("http://localhost:2021/flipkart_curd/deletepro/"+id)
+        return axios.delete("https://flipkart-app-beckend.herokuapp.com/deletepro/"+id)
     }
     findById(id)
     {
-        return axios.get("http://localhost:2021/flipkart_curd/search/"+id)
+        return axios.get("https://flipkart-app-beckend.herokuapp.com/search/"+id)
     }
     updateproduct(product)
     {
-        return axios.put("http://localhost:2021/flipkart_curd/updatepro",product)
+        return axios.put("https://flipkart-app-beckend.herokuapp.com/updatepro",product)
     }
 }
 export default new ProductService()
